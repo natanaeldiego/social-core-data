@@ -7,9 +7,10 @@
 
 import UIKit
 
-class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+class CollectionTableViewCell: UITableViewCell, UITableViewDelegate, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
         
     static let identifier = "CollectionTableViewCell"
+    private let imageDownloader = ImageDownloader.shared
     
     static func nib() -> UINib {
         return UINib(nibName: "CollectionTableViewCell", bundle: nil)
@@ -18,6 +19,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     func configure(with models: [Followers]) {
         self.models = models
         collectionView.reloadData()
+        
     }
     
     @IBOutlet var collectionView: UICollectionView!
@@ -34,7 +36,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        print("DEBUG 123")
         // Configure the view for the selected state
     }
     
@@ -46,9 +48,7 @@ class CollectionTableViewCell: UITableViewCell, UICollectionViewDelegate, UIColl
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyCollectionViewCell.identifier, for: indexPath) as! MyCollectionViewCell
-        
         cell.configure(with: models[indexPath.row])
-        
         return cell
     }
     

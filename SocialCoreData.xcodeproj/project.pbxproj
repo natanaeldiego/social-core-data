@@ -37,6 +37,8 @@
 		3951E1F22665691900F35BDC /* FollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E1E92665691900F35BDC /* FollowersViewController.swift */; };
 		3951E1F52665699500F35BDC /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E1F42665699500F35BDC /* ImageDownloader.swift */; };
 		3951E1F92665733000F35BDC /* FollowerDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E1F82665733000F35BDC /* FollowerDB.swift */; };
+		3951E2072665DFF200F35BDC /* LoadFollowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E2062665DFF200F35BDC /* LoadFollowerViewController.swift */; };
+		3951E20A2665E0B300F35BDC /* LoadFollowerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3951E2092665E0B300F35BDC /* LoadFollowerCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		3951E1E92665691900F35BDC /* FollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowersViewController.swift; sourceTree = "<group>"; };
 		3951E1F42665699500F35BDC /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		3951E1F82665733000F35BDC /* FollowerDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerDB.swift; sourceTree = "<group>"; };
+		3951E2062665DFF200F35BDC /* LoadFollowerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFollowerViewController.swift; sourceTree = "<group>"; };
+		3951E2092665E0B300F35BDC /* LoadFollowerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFollowerCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +179,8 @@
 				3951E1E72665691900F35BDC /* FeedPostTableViewController.swift */,
 				3951E1E82665691900F35BDC /* KeyboardViewController.swift */,
 				3951E1E92665691900F35BDC /* FollowersViewController.swift */,
+				3951E2062665DFF200F35BDC /* LoadFollowerViewController.swift */,
+				3951E2092665E0B300F35BDC /* LoadFollowerCollectionViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -270,7 +276,9 @@
 				3951E1BF266568C600F35BDC /* User.swift in Sources */,
 				3951E1D62665690C00F35BDC /* CollectionTableViewCell.swift in Sources */,
 				3951E1EF2665691900F35BDC /* ByHandViewController.swift in Sources */,
+				3951E20A2665E0B300F35BDC /* LoadFollowerCollectionViewCell.swift in Sources */,
 				3951E1EA2665691900F35BDC /* FollowerTableViewController.swift in Sources */,
+				3951E2072665DFF200F35BDC /* LoadFollowerViewController.swift in Sources */,
 				3951E1F92665733000F35BDC /* FollowerDB.swift in Sources */,
 				3951E1ED2665691900F35BDC /* UserTableViewController.swift in Sources */,
 				3951E1A62665683100F35BDC /* SceneDelegate.swift in Sources */,

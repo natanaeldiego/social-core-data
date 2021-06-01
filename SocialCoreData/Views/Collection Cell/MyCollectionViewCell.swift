@@ -8,6 +8,7 @@
 import UIKit
 
 class MyCollectionViewCell: UICollectionViewCell {
+    static let kReuseIdentifier = "MyCollectionViewCell"
     
     @IBOutlet var myLabel: UILabel!
     @IBOutlet var myImageView: UIImageView!
@@ -25,7 +26,13 @@ class MyCollectionViewCell: UICollectionViewCell {
     
     public func configure(with model: Followers) {
         self.myLabel.text = model.text
-        self.myImageView.image = UIImage(data: try! Data(contentsOf: URL(string: "http://lorempixel.com.br/120/120")!))
+        self.myImageView.image = try! UIImage(data: Data(contentsOf: URL(string: "http://lorempixel.com.br/120/120")!))!
+        self.myImageView.contentMode = .scaleAspectFill
+    }
+    
+    func setup(title: String, imagePost: UIImage) {
+        self.myLabel.text = title
+        self.myImageView.image = imagePost
         self.myImageView.contentMode = .scaleAspectFill
     }
 

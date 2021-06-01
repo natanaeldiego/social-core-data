@@ -68,19 +68,20 @@ class FollowerTableViewController: UITableViewController {
                             DispatchQueue.main.async {
                                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
                                 let context: NSManagedObjectContext = appDelegate.persistentContainer.viewContext
-                                let entity = NSEntityDescription.entity(forEntityName: "FollowerDB", in: context)
-                                let newFollower = FollowerDB(entity: entity!, insertInto: context)
                                 
                                 for saveData in users {
+                                    let entity = NSEntityDescription.entity(forEntityName: "FollowerDB", in: context)
+                                    let newFollower = FollowerDB(entity: entity!, insertInto: context)
+                                    
                                     newFollower.id = Int32(saveData.id)
                                     newFollower.name = saveData.name
                                     newFollower.username = saveData.username
-                                    do {
-                                        try context.save()
-                                        self.followerList.append(newFollower)
-                                    } catch {
-                                        print(error.localizedDescription)
-                                    }
+                                    self.followerList.append(newFollower)
+                                }
+                                do {
+                                    try context.save()
+                                } catch {
+                                    print(error.localizedDescription)
                                 }
                             }
                         }
