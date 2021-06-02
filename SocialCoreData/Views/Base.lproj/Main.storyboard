@@ -189,7 +189,7 @@
                                 <connections>
                                     <outlet property="nameLabel" destination="hQ8-UZ-hb4" id="94v-P2-qWR"/>
                                     <outlet property="surname" destination="Vjr-cc-VeK" id="hyb-4k-vDq"/>
-                                    <segue destination="7jJ-2i-8HG" kind="show" id="1Bn-Bg-uhg"/>
+                                    <segue destination="OGn-pO-2t8" kind="show" id="hdf-fb-EQe"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -677,11 +677,11 @@
             <objects>
                 <viewController id="OGn-pO-2t8" customClass="FollowersViewController" customModule="SocialCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bz6-vl-7EY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GuS-20-xti">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -701,14 +701,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vbb-u8-PYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6138" y="-503"/>
+            <point key="canvasLocation" x="3296" y="111"/>
         </scene>
         <!--Load Follower View Controller-->
         <scene sceneID="Zqi-GQ-TWY">
             <objects>
                 <viewController id="7jJ-2i-8HG" customClass="LoadFollowerViewController" customModule="SocialCoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Sc-6O-rSQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="adX-py-Yxv">
@@ -793,7 +793,7 @@
                                         </connections>
                                     </collectionView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YvR-jo-pkl">
-                                        <rect key="frame" x="8" y="516" width="398" height="175"/>
+                                        <rect key="frame" x="8" y="609" width="398" height="175"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="175" id="xPG-vi-xxT"/>
@@ -834,7 +834,7 @@
                                         </connections>
                                     </collectionView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Imagens ilustrativas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rl9-EB-Lla">
-                                        <rect key="frame" x="0.0" y="415" width="414" height="81"/>
+                                        <rect key="frame" x="0.0" y="415" width="414" height="174"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>

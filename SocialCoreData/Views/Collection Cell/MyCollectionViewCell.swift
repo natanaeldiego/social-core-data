@@ -24,15 +24,9 @@ class MyCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    public func configure(with model: Followers) {
+    public func configure(with model: Followers, imageView: UIImage) {
         self.myLabel.text = model.text
-        self.myImageView.image = try! UIImage(data: Data(contentsOf: URL(string: "http://lorempixel.com.br/120/120")!))!
-        self.myImageView.contentMode = .scaleAspectFill
-    }
-    
-    func setup(title: String, imagePost: UIImage) {
-        self.myLabel.text = title
-        self.myImageView.image = imagePost
+        self.myImageView.image = imageView
         self.myImageView.contentMode = .scaleAspectFill
     }
 
